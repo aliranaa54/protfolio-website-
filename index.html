@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muhammad Ali — DevOps Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <span class="nav-logo">MA<span class="dot">.</span></span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="burger" id="burger">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="about">
+    <div class="hero-grid">
+      <div class="hero-eyebrow"><span class="tag">Available for Hire</span></div>
+      <h1 class="hero-title">
+        <span class="line">Muhammad</span>
+        <span class="line accent">Ali</span>
+      </h1>
+      <p class="hero-role">DevOps <span class="slash">/</span> Cloud Engineer</p>
+      <p class="hero-desc">
+        Designing, deploying, and managing scalable cloud infrastructure on AWS.
+        Specializing in containerization, CI/CD automation, and production-ready systems.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Environments Managed</span></div>
+        <div class="stat"><span class="stat-num">7+</span><span class="stat-label">Microservices Deployed</span></div>
+        <div class="stat"><span class="stat-num">10+</span><span class="stat-label">AWS Services Used</span></div>
+      </div>
+    </div>
+    <div class="hero-terminal">
+      <div class="terminal-bar">
+        <span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span>
+        <span class="terminal-title">bash — aws</span>
+      </div>
+      <div class="terminal-body" id="terminal-body"></div>
+    </div>
+    <div class="scroll-hint">scroll ↓</div>
+  </header>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">Technical Arsenal</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card" data-delay="0">
+        <div class="skill-icon">☁️</div>
+        <h3>Cloud (AWS)</h3>
+        <div class="skill-tags">
+          <span>EC2</span><span>ECS</span><span>ECR</span><span>S3</span><span>RDS</span>
+          <span>VPC</span><span>IAM</span><span>ALB</span><span>CloudFront</span>
+          <span>ElastiCache</span><span>API Gateway</span><span>CloudWatch</span>
+        </div>
+      </div>
+      <div class="skill-card" data-delay="100">
+        <div class="skill-icon">🐳</div>
+        <h3>Containers & Orchestration</h3>
+        <div class="skill-tags">
+          <span>Docker</span><span>Docker Compose</span><span>ECS Fargate</span>
+          <span>ECS EC2</span><span>Kubernetes</span>
+        </div>
+      </div>
+      <div class="skill-card" data-delay="200">
+        <div class="skill-icon">⚙️</div>
+        <h3>CI/CD & IaC</h3>
+        <div class="skill-tags">
+          <span>GitHub Actions</span><span>Jenkins</span><span>Terraform</span>
+          <span>Ansible</span><span>Git</span>
+        </div>
+      </div>
+      <div class="skill-card" data-delay="300">
+        <div class="skill-icon">📊</div>
+        <h3>Monitoring & Logging</h3>
+        <div class="skill-tags">
+          <span>Prometheus</span><span>Grafana</span><span>Loki</span>
+          <span>Datadog</span><span>CloudWatch</span><span>Node Exporter</span>
+        </div>
+      </div>
+      <div class="skill-card" data-delay="400">
+        <div class="skill-icon">🌐</div>
+        <h3>Web Servers & Messaging</h3>
+        <div class="skill-tags">
+          <span>Nginx</span><span>Apache</span><span>Caddy</span>
+          <span>RabbitMQ</span><span>Redis</span>
+        </div>
+      </div>
+      <div class="skill-card" data-delay="500">
+        <div class="skill-icon">🐧</div>
+        <h3>OS & Scripting</h3>
+        <div class="skill-tags">
+          <span>Linux (Ubuntu)</span><span>Bash Scripting</span><span>PM2</span><span>Node.js</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section section-dark" id="experience">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Experience</h2>
+    </div>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-meta">
+          <span class="tl-date">Jan 2025 — Present</span>
+          <span class="tl-badge current">Current</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Associate DevOps Engineer</h3>
+          <span class="tl-company">Sapadsoft</span>
+          <ul>
+            <li>Designed and managed scalable AWS infrastructure: ECS, EC2, ECR, RDS, S3, VPC, and IAM.</li>
+            <li>Containerized deployments using Docker and ECS (Fargate & EC2) for scalability and reliability.</li>
+            <li>Built and maintained CI/CD pipelines using GitHub Actions for automated deployments.</li>
+            <li>Implemented monitoring and logging using Prometheus, Grafana, Loki, Datadog, and CloudWatch.</li>
+            <li>Optimized AWS costs using resource tagging and Fargate Spot strategy.</li>
+            <li>Managed secure access using IAM roles, policies, and AWS Secrets Manager.</li>
+            <li>Provisioned infrastructure using Terraform and supported automation workflows.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-meta">
+          <span class="tl-date">Oct 2024 — Dec 2024</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Trainee DevOps Engineer</h3>
+          <span class="tl-company">Sapadsoft</span>
+          <ul>
+            <li>Gained hands-on experience with AWS services including EC2, S3, RDS, VPC, and IAM.</li>
+            <li>Assisted in containerization using Docker and Docker Compose.</li>
+            <li>Configured basic monitoring and logging using CloudWatch and Grafana.</li>
+            <li>Supported CI/CD pipelines using GitHub Actions and Terraform.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-meta">
+          <span class="tl-date">Aug 2024 — Sep 2024</span>
+        </div>
+        <div class="timeline-content">
+          <h3>DevOps Intern</h3>
+          <span class="tl-company">OSOL Pvt Ltd (Fatima Group)</span>
+          <ul>
+            <li>Gained hands-on experience with Linux fundamentals and system operations.</li>
+            <li>Developed Bash scripts to automate routine tasks.</li>
+            <li>Configured Apache server and deployed static websites with domain integration.</li>
+            <li>Worked with AWS services: EC2, S3, and CloudWatch. Explored Jenkins CI/CD.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Projects</h2>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card featured">
+        <div class="project-top">
+          <span class="project-badge">Featured</span>
+          <div class="project-links">
+            <a href="https://github.com/Devops544" target="_blank" class="icon-link" title="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <h3>Microservices on AWS ECS/ECR</h3>
+        <p>Deployed a complete microservices architecture with 7 container images on AWS ECS & ECR. Configured CloudMap for service discovery, Redis for caching, RabbitMQ for messaging, and RDS for databases.</p>
+        <div class="project-stack">
+          <span>ECS</span><span>ECR</span><span>RDS</span><span>Redis</span>
+          <span>RabbitMQ</span><span>ALB</span><span>API Gateway</span><span>Secrets Manager</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-links">
+            <a href="https://github.com/Devops544" target="_blank" class="icon-link" title="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <h3>Wedlii Backend CI/CD</h3>
+        <p>Deployed Wedlii backend on AWS EC2 with PM2 and Node.js across dev, staging, and production environments with fully automated CI/CD pipelines via GitHub Actions.</p>
+        <div class="project-stack">
+          <span>EC2</span><span>Node.js</span><span>PM2</span><span>GitHub Actions</span><span>Bash</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-links">
+            <a href="https://github.com/Devops544" target="_blank" class="icon-link" title="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <h3>Servita Backend Deployment</h3>
+        <p>Deployed Servita backend on a t3.2xlarge EC2 instance with secure networking, RDS integration, IAM roles, Secrets Manager, and HTTPS access via Caddy load balancer.</p>
+        <div class="project-stack">
+          <span>EC2</span><span>RDS</span><span>Caddy</span><span>IAM</span><span>Security Groups</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <div class="project-links">
+            <a href="https://github.com/Devops544" target="_blank" class="icon-link" title="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <h3>WAWCD Website on ECS</h3>
+        <p>Deployed WAWCD website on AWS ECS with Docker images in ECR. Implemented 75% Fargate Spot / 25% standard split for cost optimization while maintaining reliability.</p>
+        <div class="project-stack">
+          <span>ECS</span><span>ECR</span><span>Fargate</span><span>ALB</span><span>CI/CD</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-dark" id="contact">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2 class="section-title">Let's Connect</h2>
+    </div>
+    <div class="contact-wrapper">
+      <p class="contact-intro">I'm always open to discussing new opportunities, challenging projects, or just having a great DevOps conversation.</p>
+      <div class="contact-links">
+        <a href="mailto:aliranaa708@gmail.com" class="contact-card">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <span class="contact-label">Email</span>
+            <span class="contact-value">aliranaa708@gmail.com</span>
+          </div>
+        </a>
+        <a href="tel:+923208737828" class="contact-card">
+          <div class="contact-icon">📱</div>
+          <div>
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">+92-320-8737828</span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/muhammad-ali" target="_blank" class="contact-card">
+          <div class="contact-icon">💼</div>
+          <div>
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">muhammad-ali</span>
+          </div>
+        </a>
+        <a href="https://github.com/Devops544" target="_blank" class="contact-card">
+          <div class="contact-icon">🐙</div>
+          <div>
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">Devops544</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span>Built with ❤️ by Muhammad Ali</span>
+    <span>DevOps Engineer · 2025</span>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
