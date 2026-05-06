@@ -14,26 +14,25 @@
 <!-- NAV -->
 <nav class="nav">
   <div class="logo">MA<span>.</span></div>
-  <div class="nav-links">
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 </nav>
 
 <!-- HERO -->
 <section class="hero" id="about">
   <div class="hero-left">
-
     <span class="badge">AVAILABLE FOR HIRE</span>
 
     <h1>
       Muhammad Ali <br>
-      <span>DevOps Engineer</span>
+      <span class="accent">DevOps Engineer</span>
     </h1>
 
     <p>
-      I design and manage scalable AWS infrastructure, automate deployments,
+      I design and manage scalable AWS infrastructure, automate CI/CD pipelines,
       and build reliable microservices systems.
     </p>
 
@@ -43,11 +42,10 @@
     </div>
 
     <div class="stats">
-      <div><strong>7+</strong> Microservices</div>
-      <div><strong>3+</strong> Environments</div>
-      <div><strong>10+</strong> AWS Services</div>
+      <div><strong>7+</strong><span>Microservices</span></div>
+      <div><strong>3+</strong><span>Environments</span></div>
+      <div><strong>10+</strong><span>AWS Services</span></div>
     </div>
-
   </div>
 
   <div class="terminal">
@@ -61,11 +59,10 @@
 
 <!-- PROJECTS -->
 <section class="section" id="projects">
-  <h2>Case Studies</h2>
+  <h2 class="section-title">Case Studies</h2>
 
   <div class="projects-grid">
 
-    <!-- Project 1 -->
     <div class="project-card featured">
       <h3>Microservices Platform on AWS ECS</h3>
 
@@ -76,7 +73,7 @@
 
       <div class="block">
         <h4>Solution</h4>
-        <p>Built ECS-based microservices with Cloud Map, Redis, and RabbitMQ.</p>
+        <p>Built ECS microservices using Cloud Map, Redis, and RabbitMQ.</p>
       </div>
 
       <div class="block">
@@ -87,7 +84,6 @@
       <div class="tags">ECS · RDS · Redis · RabbitMQ · ALB</div>
     </div>
 
-    <!-- Project 2 -->
     <div class="project-card">
       <h3>CI/CD Automation</h3>
 
@@ -109,9 +105,8 @@
       <div class="tags">GitHub Actions · EC2 · PM2</div>
     </div>
 
-    <!-- Project 3 -->
     <div class="project-card">
-      <h3>Production Backend (Servita)</h3>
+      <h3>Servita Backend Infrastructure</h3>
 
       <div class="block">
         <h4>Problem</h4>
@@ -131,18 +126,17 @@
       <div class="tags">EC2 · RDS · IAM · Caddy</div>
     </div>
 
-    <!-- Project 4 -->
     <div class="project-card">
       <h3>Cost Optimization (ECS)</h3>
 
       <div class="block">
         <h4>Problem</h4>
-        <p>High infrastructure costs.</p>
+        <p>High AWS costs on Fargate.</p>
       </div>
 
       <div class="block">
         <h4>Solution</h4>
-        <p>Used Fargate Spot (75%) + standard (25%).</p>
+        <p>Used 75% Fargate Spot + 25% standard.</p>
       </div>
 
       <div class="block">
