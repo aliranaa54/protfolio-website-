@@ -1,154 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Muhammad Ali | DevOps Engineer</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Space+Mono&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Ali | DevOps Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <nav class="nav">
-  <div class="logo">MA<span>.</span></div>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+    <div class="logo">MA<span>.</span></div>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
 </nav>
 
-<!-- HERO -->
 <section class="hero" id="about">
-  <div class="hero-left">
+    <div class="hero-left">
+        <div class="hire-badge">
+            <span class="dot-pulse"></span> Available for Hire
+        </div>
+        <h1>Architecting <span class="accent">Scalable</span> Cloud Systems.</h1>
+        <p class="hero-desc">
+            <strong>Muhammad Ali</strong> — DevOps Engineer specializing in AWS automation, 
+            Kubernetes orchestration, and high-performance CI/CD pipelines.
+        </p>
 
-    <span class="badge">AVAILABLE FOR HIRE</span>
+        <div class="buttons">
+            <a href="#projects" class="btn primary">Explore Projects</a>
+            <a href="https://github.com/Devops544" class="btn outline">View GitHub</a>
+        </div>
 
-    <h1>
-      Muhammad Ali <br>
-      <span class="accent">DevOps Engineer</span>
-    </h1>
-
-    <p class="hero-desc">
-      I build scalable cloud systems on AWS, automate deployments,
-      and manage production-ready microservices architectures.
-    </p>
-
-    <div class="buttons">
-      <a href="#projects" class="btn primary">View Projects</a>
-      <a href="#contact" class="btn outline">Contact</a>
+        <div class="stats">
+            <div class="stat-box"><strong>7+</strong><span>Microservices</span></div>
+            <div class="stat-box"><strong>3+</strong><span>Environments</span></div>
+            <div class="stat-box"><strong>10+</strong><span>AWS Services</span></div>
+        </div>
     </div>
 
-    <div class="stats">
-      <div><strong>7+</strong><span>Microservices</span></div>
-      <div><strong>3+</strong><span>Environments</span></div>
-      <div><strong>10+</strong><span>AWS Services</span></div>
+    <div class="terminal-container">
+        <div class="terminal-header">
+            <div class="terminal-dots">
+                <span class="t-dot red"></span>
+                <span class="t-dot yellow"></span>
+                <span class="t-dot green"></span>
+            </div>
+            <div class="terminal-title">bash — ali@devops</div>
+        </div>
+        <div id="terminal-body" class="terminal-content">
+            <p><span class="p-blue">➜</span> <span class="p-green">~</span> git commit -m "Optimize AWS Infra"</p>
+            <p>[master 7a2f1b0] Infrastructure updated</p>
+            <p><span class="p-blue">➜</span> <span class="p-green">~</span> terraform apply --auto-approve</p>
+            <p>Plan: 12 to add, 0 to change, 0 to destroy.</p>
+            <p class="p-green">Apply complete! Resources: 12 added.</p>
+            <p><span class="p-blue">➜</span> <span class="p-green">~</span> <span class="cursor">_</span></p>
+        </div>
     </div>
-
-  </div>
-
-  <div class="terminal">
-    <div class="terminal-header">
-      <span></span><span></span><span></span>
-      <p>deployment.log</p>
-    </div>
-    <div id="terminal-body"></div>
-  </div>
 </section>
 
-<!-- SUMMARY -->
-<section class="section summary">
-
-  <div class="summary-grid">
-
-    <div class="summary-card">
-      <h2>Professional Summary</h2>
-      <p>
-        DevOps Engineer with experience in AWS infrastructure, Docker, ECS,
-        and CI/CD pipelines using GitHub Actions.
-      </p>
-      <p>
-        Focused on scalability, security, and cost optimization across
-        production environments.
-      </p>
-    </div>
-
-    <div class="summary-card">
-      <h3>Core Skills</h3>
-
-      <div class="skills">
-        <span>AWS</span>
-        <span>Docker</span>
-        <span>CI/CD</span>
-        <span>Terraform</span>
-        <span>Monitoring</span>
-        <span>Linux</span>
-      </div>
-
-      <h3>Quick Contact</h3>
-      <ul class="contact-mini">
-        <li>📱 +92-320...</li>
-        <li>✉️ Email</li>
-        <li>💼 LinkedIn</li>
-        <li>🐙 GitHub</li>
-      </ul>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- PROJECTS -->
 <section class="section" id="projects">
-  <h2 class="section-title">Case Studies</h2>
+    <div class="container">
+        <h2 class="section-label">Selected Works</h2>
+        <h3 class="section-title">Case Studies</h3>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="card-icon">☁️</div>
+                <h3>Microservices Platform</h3>
+                <p>Enterprise-scale ECS orchestration with automated scaling and Redis caching.</p>
+                <div class="tags"><span>ECS</span><span>Redis</span><span>RabbitMQ</span></div>
+            </div>
 
-  <div class="projects-grid">
+            <div class="project-card">
+                <div class="card-icon">🚀</div>
+                <h3>CI/CD Automation</h3>
+                <p>Zero-downtime deployment pipelines reducing release cycles by 60%.</p>
+                <div class="tags"><span>GitHub Actions</span><span>EC2</span></div>
+            </div>
 
-    <div class="project-card">
-      <h3>Microservices Platform</h3>
-      <p>Built ECS-based microservices with Redis & RabbitMQ.</p>
-      <div class="tags">ECS · Redis · RabbitMQ</div>
+            <div class="project-card">
+                <div class="card-icon">🔒</div>
+                <h3>Servita Backend</h3>
+                <p>Hardened production environment focusing on IAM least-privilege access.</p>
+                <div class="tags"><span>EC2</span><span>RDS</span><span>IAM</span></div>
+            </div>
+
+            <div class="project-card">
+                <div class="card-icon">💰</div>
+                <h3>Cost Optimization</h3>
+                <p>Implementing Fargate Spot instances to slash cloud overhead by 40%.</p>
+                <div class="tags"><span>ECS</span><span>Fargate</span></div>
+            </div>
+        </div>
     </div>
-
-    <div class="project-card">
-      <h3>CI/CD Automation</h3>
-      <p>Automated deployments using GitHub Actions.</p>
-      <div class="tags">GitHub Actions · EC2</div>
-    </div>
-
-    <div class="project-card">
-      <h3>Servita Backend</h3>
-      <p>Secure EC2 + RDS production setup.</p>
-      <div class="tags">EC2 · RDS · IAM</div>
-    </div>
-
-    <div class="project-card">
-      <h3>Cost Optimization</h3>
-      <p>Reduced AWS cost using Fargate Spot.</p>
-      <div class="tags">ECS · Fargate</div>
-    </div>
-
-  </div>
 </section>
 
-<!-- CONTACT -->
-<section class="section contact" id="contact">
-  <h2>Contact</h2>
-
-  <div class="contact-links">
-    <a href="mailto:aliranaa708@gmail.com">Email</a>
-    <a href="tel:+923208737828">Phone</a>
-    <a href="https://github.com/Devops544">GitHub</a>
-    <a href="#">LinkedIn</a>
-  </div>
-</section>
-
-<footer>
-  Built by Muhammad Ali — DevOps Engineer
+<footer id="contact">
+    <div class="footer-content">
+        <h2>Let's build something scalable.</h2>
+        <div class="contact-links">
+            <a href="mailto:aliranaa708@gmail.com">Email</a>
+            <a href="https://linkedin.com">LinkedIn</a>
+            <a href="https://github.com/Devops544">GitHub</a>
+        </div>
+        <p class="copyright">© 2024 Built by Muhammad Ali</p>
+    </div>
 </footer>
 
-<script src="main.js"></script>
 </body>
 </html>
