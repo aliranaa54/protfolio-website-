@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Muhammad Ali - DevOps Engineer building scalable AWS infrastructure, CI/CD systems, and microservices platforms."/>
-  <title>Muhammad Ali — DevOps Engineer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Ali | DevOps Engineer</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;800&family=Space+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Space+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,37 +16,38 @@
   <div class="logo">MA<span>.</span></div>
   <div class="nav-links">
     <a href="#about">About</a>
-    <a href="#architecture">Architecture</a>
     <a href="#projects">Projects</a>
-    <a href="#contact" class="cta">Contact</a>
+    <a href="#contact">Contact</a>
   </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero" id="about">
   <div class="hero-left">
+
     <span class="badge">AVAILABLE FOR HIRE</span>
 
     <h1>
-      Muhammad Ali<br>
-      <span class="accent">DevOps Engineer</span>
+      Muhammad Ali <br>
+      <span>DevOps Engineer</span>
     </h1>
 
     <p>
-      I build and operate production-grade cloud infrastructure on AWS,
-      focusing on scalability, automation, and system reliability across microservices environments.
+      I design and manage scalable AWS infrastructure, automate deployments,
+      and build reliable microservices systems.
     </p>
 
-    <div class="actions">
-      <a href="#projects" class="btn primary">View Work</a>
-      <a href="#contact" class="btn secondary">Contact</a>
+    <div class="buttons">
+      <a href="#projects" class="btn primary">View Projects</a>
+      <a href="#contact" class="btn outline">Contact</a>
     </div>
 
     <div class="stats">
-      <div><span>7+</span> Microservices</div>
-      <div><span>3+</span> Environments</div>
-      <div><span>10+</span> AWS Services</div>
+      <div><strong>7+</strong> Microservices</div>
+      <div><strong>3+</strong> Environments</div>
+      <div><strong>10+</strong> AWS Services</div>
     </div>
+
   </div>
 
   <div class="terminal">
@@ -55,29 +55,7 @@
       <span></span><span></span><span></span>
       <p>deployment.log</p>
     </div>
-    <pre id="terminal"></pre>
-  </div>
-</section>
-
-<!-- ARCHITECTURE -->
-<section class="section dark" id="architecture">
-  <h2>System Design Approach</h2>
-
-  <div class="grid">
-    <div class="card">
-      <h3>Cloud Infrastructure</h3>
-      <p>Secure, scalable AWS architecture using ECS, EC2, RDS, VPC, and IAM.</p>
-    </div>
-
-    <div class="card">
-      <h3>CI/CD Automation</h3>
-      <p>Zero-downtime pipelines using GitHub Actions and Docker-based deployments.</p>
-    </div>
-
-    <div class="card">
-      <h3>Observability</h3>
-      <p>Monitoring using Prometheus, Grafana, Loki, and CloudWatch.</p>
-    </div>
+    <div id="terminal-body"></div>
   </div>
 </section>
 
@@ -85,56 +63,104 @@
 <section class="section" id="projects">
   <h2>Case Studies</h2>
 
-  <div class="projects">
+  <div class="projects-grid">
 
-    <div class="project featured">
+    <!-- Project 1 -->
+    <div class="project-card featured">
       <h3>Microservices Platform on AWS ECS</h3>
 
-      <p><strong>Problem:</strong> Scaling multiple services with stable communication.</p>
-      <p><strong>Solution:</strong> ECS + Cloud Map + Redis + RabbitMQ.</p>
-      <p><strong>Impact:</strong> Reliable communication, scalable architecture.</p>
+      <div class="block">
+        <h4>Problem</h4>
+        <p>Service communication was unreliable and scaling was difficult.</p>
+      </div>
+
+      <div class="block">
+        <h4>Solution</h4>
+        <p>Built ECS-based microservices with Cloud Map, Redis, and RabbitMQ.</p>
+      </div>
+
+      <div class="block">
+        <h4>Impact</h4>
+        <p>Improved reliability and enabled horizontal scaling.</p>
+      </div>
 
       <div class="tags">ECS · RDS · Redis · RabbitMQ · ALB</div>
     </div>
 
-    <div class="project">
-      <h3>CI/CD Automation (Wedlii)</h3>
+    <!-- Project 2 -->
+    <div class="project-card">
+      <h3>CI/CD Automation</h3>
 
-      <p><strong>Problem:</strong> Manual deployments were slow.</p>
-      <p><strong>Solution:</strong> GitHub Actions automation.</p>
-      <p><strong>Impact:</strong> Faster, reliable deployments.</p>
+      <div class="block">
+        <h4>Problem</h4>
+        <p>Manual deployments caused delays and errors.</p>
+      </div>
+
+      <div class="block">
+        <h4>Solution</h4>
+        <p>Implemented GitHub Actions pipelines.</p>
+      </div>
+
+      <div class="block">
+        <h4>Impact</h4>
+        <p>Fast and reliable deployments.</p>
+      </div>
 
       <div class="tags">GitHub Actions · EC2 · PM2</div>
     </div>
 
-    <div class="project">
-      <h3>Servita Backend Deployment</h3>
+    <!-- Project 3 -->
+    <div class="project-card">
+      <h3>Production Backend (Servita)</h3>
 
-      <p><strong>Problem:</strong> Needed secure production setup.</p>
-      <p><strong>Solution:</strong> EC2 + RDS + Caddy HTTPS.</p>
-      <p><strong>Impact:</strong> Secure and stable system.</p>
+      <div class="block">
+        <h4>Problem</h4>
+        <p>Needed secure production infrastructure.</p>
+      </div>
+
+      <div class="block">
+        <h4>Solution</h4>
+        <p>Deployed EC2 + RDS + HTTPS via Caddy.</p>
+      </div>
+
+      <div class="block">
+        <h4>Impact</h4>
+        <p>Stable and secure production system.</p>
+      </div>
 
       <div class="tags">EC2 · RDS · IAM · Caddy</div>
     </div>
 
-    <div class="project">
-      <h3>Cost Optimized ECS</h3>
+    <!-- Project 4 -->
+    <div class="project-card">
+      <h3>Cost Optimization (ECS)</h3>
 
-      <p><strong>Problem:</strong> High AWS cost.</p>
-      <p><strong>Solution:</strong> Fargate Spot strategy.</p>
-      <p><strong>Impact:</strong> ~40% cost reduction.</p>
+      <div class="block">
+        <h4>Problem</h4>
+        <p>High infrastructure costs.</p>
+      </div>
 
-      <div class="tags">ECS · Fargate · Cost Optimization</div>
+      <div class="block">
+        <h4>Solution</h4>
+        <p>Used Fargate Spot (75%) + standard (25%).</p>
+      </div>
+
+      <div class="block">
+        <h4>Impact</h4>
+        <p>~40% cost reduction.</p>
+      </div>
+
+      <div class="tags">ECS · Fargate · Cost</div>
     </div>
 
   </div>
 </section>
 
 <!-- CONTACT -->
-<section class="section dark" id="contact">
-  <h2>Let’s Connect</h2>
+<section class="section contact" id="contact">
+  <h2>Contact</h2>
 
-  <div class="contact">
+  <div class="contact-links">
     <a href="mailto:aliranaa708@gmail.com">Email</a>
     <a href="tel:+923208737828">Phone</a>
     <a href="https://github.com/Devops544">GitHub</a>
@@ -143,7 +169,7 @@
 </section>
 
 <footer>
-  <p>Built by Muhammad Ali — DevOps Engineer</p>
+  Built by Muhammad Ali — DevOps Engineer
 </footer>
 
 <script src="main.js"></script>
