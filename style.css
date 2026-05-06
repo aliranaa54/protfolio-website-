@@ -1,48 +1,111 @@
 body {
-  background: #070a12;
-  color: #e5e7eb;
+  margin: 0;
   font-family: 'Syne', sans-serif;
+  background: #0b0f17;
+  color: #e5e7eb;
 }
 
 /* NAV */
 .nav {
   display: flex;
   justify-content: space-between;
-  padding: 20px 60px;
+  padding: 20px 40px;
+}
+
+.logo span { color: #6366f1; }
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #9ca3af;
 }
 
 /* HERO */
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 100px 60px;
+  padding: 80px 40px;
 }
 
-.hero h1 {
-  font-size: 60px;
+.hero h1 span {
+  color: #6366f1;
 }
 
-.accent { color: #6366f1; }
+.badge {
+  border: 1px solid #6366f1;
+  padding: 5px 10px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
 
 /* BUTTONS */
 .btn {
-  padding: 10px 20px;
+  padding: 10px 15px;
   margin-right: 10px;
 }
 
-.primary { background: #6366f1; }
-.secondary { border: 1px solid #444; }
+.primary {
+  background: #6366f1;
+  color: white;
+}
+
+.outline {
+  border: 1px solid #444;
+}
 
 /* TERMINAL */
 .terminal {
   background: black;
   padding: 20px;
-  font-family: monospace;
+  border-radius: 10px;
 }
 
-/* CARDS */
-.card, .project {
+#terminal-body {
+  font-family: monospace;
+  color: #22c55e;
+}
+
+/* PROJECTS */
+.projects-grid {
+  display: grid;
+  gap: 20px;
+  padding: 40px;
+}
+
+.project-card {
   background: #111827;
   padding: 20px;
-  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid #1f2937;
+}
+
+.project-card:hover {
+  border-color: #6366f1;
+}
+
+.block {
+  margin-bottom: 10px;
+}
+
+.block h4 {
+  color: #6366f1;
+  font-size: 14px;
+}
+
+.tags {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* CONTACT */
+.contact-links a {
+  margin-right: 15px;
+  color: white;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #9ca3af;
 }
