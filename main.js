@@ -1,25 +1,24 @@
-const terminal = document.getElementById("terminal");
+const terminal = document.getElementById("terminal-body");
 
-const logs = [
-  "Initializing AWS...",
+const lines = [
+  "Initializing AWS infrastructure...",
+  "Checking ECS cluster...",
   "Pulling Docker images...",
-  "Deploying services...",
-  "Running health checks...",
+  "Connecting to RDS...",
+  "Starting services...",
   "Deployment complete 🚀"
 ];
 
-async function run() {
-  for (let line of logs) {
+let i = 0;
+
+function typeLine() {
+  if (i < lines.length) {
     const div = document.createElement("div");
+    div.textContent = "$ " + lines[i];
     terminal.appendChild(div);
-
-    for (let i = 0; i < line.length; i++) {
-      div.textContent = "$ " + line.substring(0, i + 1);
-      await new Promise(r => setTimeout(r, 20));
-    }
-
-    await new Promise(r => setTimeout(r, 400));
+    i++;
+    setTimeout(typeLine, 700);
   }
 }
 
-run();
+typeLine();
