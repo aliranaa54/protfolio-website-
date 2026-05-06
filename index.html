@@ -3,13 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Muhammad Ali - DevOps Engineer specializing in AWS, Docker, CI/CD pipelines, Kubernetes, and production-grade cloud infrastructure." />
-  <title>Muhammad Ali — DevOps / Cloud Engineer</title>
+  <meta name="description" content="Muhammad Ali - DevOps Engineer building scalable AWS infrastructure, CI/CD systems, and microservices platforms."/>
+  <title>Muhammad Ali — DevOps Engineer</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;800&family=Space+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,51 +14,40 @@
 
 <!-- NAV -->
 <nav class="nav">
-  <div class="nav-left">
-    <span class="logo">MA<span>.</span></span>
-  </div>
-
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#architecture">Architecture</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#projects">Case Studies</a></li>
-    <li><a href="#contact" class="cta">Contact</a></li>
-  </ul>
-
-  <div class="burger" id="burger">
-    <span></span><span></span><span></span>
+  <div class="logo">MA<span>.</span></div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#architecture">Architecture</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact" class="cta">Contact</a>
   </div>
 </nav>
 
 <!-- HERO -->
-<header class="hero" id="about">
-  <div class="hero-content">
-
+<section class="hero" id="about">
+  <div class="hero-left">
     <span class="badge">AVAILABLE FOR HIRE</span>
 
     <h1>
-      Muhammad Ali<br/>
+      Muhammad Ali<br>
       <span class="accent">DevOps Engineer</span>
     </h1>
 
-    <p class="subtitle">
-      I design and operate <strong>scalable AWS infrastructure</strong>,
-      automate deployments, and build production-grade microservice systems
-      with CI/CD, observability, and cloud-native architecture.
+    <p>
+      I build and operate production-grade cloud infrastructure on AWS,
+      focusing on scalability, automation, and system reliability across microservices environments.
     </p>
 
-    <div class="hero-actions">
-      <a href="#projects" class="btn primary">View Case Studies</a>
-      <a href="#contact" class="btn secondary">Contact Me</a>
+    <div class="actions">
+      <a href="#projects" class="btn primary">View Work</a>
+      <a href="#contact" class="btn secondary">Contact</a>
     </div>
 
-    <div class="metrics">
-      <div><span>3+</span> Environments</div>
+    <div class="stats">
       <div><span>7+</span> Microservices</div>
+      <div><span>3+</span> Environments</div>
       <div><span>10+</span> AWS Services</div>
     </div>
-
   </div>
 
   <div class="terminal">
@@ -71,140 +57,88 @@
     </div>
     <pre id="terminal"></pre>
   </div>
-</header>
-
-<!-- ARCHITECTURE THINKING -->
-<section id="architecture" class="section dark">
-  <h2>Cloud Architecture Philosophy</h2>
-
-  <div class="grid-3">
-
-    <div class="card">
-      <h3>☁️ Cloud Infrastructure</h3>
-      <p>
-        Design secure, scalable AWS systems using ECS, EC2, RDS, VPC, IAM,
-        and load-balanced microservice architectures.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>⚙️ Delivery Systems</h3>
-      <p>
-        Build automated CI/CD pipelines using GitHub Actions and Docker
-        to achieve zero-downtime deployments.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>📊 Observability</h3>
-      <p>
-        Implement monitoring stacks with Prometheus, Grafana, Loki,
-        and CloudWatch for full system visibility.
-      </p>
-    </div>
-
-  </div>
 </section>
 
-<!-- EXPERIENCE -->
-<section id="experience" class="section">
-  <h2>Professional Experience</h2>
+<!-- ARCHITECTURE -->
+<section class="section dark" id="architecture">
+  <h2>System Design Approach</h2>
 
-  <div class="timeline">
-
-    <div class="item">
-      <div class="left">
-        <span>2025 — Present</span>
-      </div>
-      <div class="right">
-        <h3>Associate DevOps Engineer</h3>
-        <h4>Sapadsoft</h4>
-
-        <ul>
-          <li>Designed AWS ECS-based microservice infrastructure (7+ services).</li>
-          <li>Built CI/CD pipelines using GitHub Actions for automated deployments.</li>
-          <li>Implemented observability stack using Grafana, Prometheus, Loki.</li>
-          <li>Optimized cloud cost using Fargate Spot + resource tagging strategies.</li>
-          <li>Managed secure infrastructure using IAM + Secrets + VPC isolation.</li>
-        </ul>
-      </div>
+  <div class="grid">
+    <div class="card">
+      <h3>Cloud Infrastructure</h3>
+      <p>Secure, scalable AWS architecture using ECS, EC2, RDS, VPC, and IAM.</p>
     </div>
 
-    <div class="item">
-      <div class="left">
-        <span>2024</span>
-      </div>
-      <div class="right">
-        <h3>Trainee DevOps Engineer</h3>
-        <h4>Sapadsoft</h4>
-        <ul>
-          <li>Worked with AWS core services: EC2, S3, RDS, VPC, IAM.</li>
-          <li>Dockerized applications and managed container deployments.</li>
-          <li>Assisted in CI/CD pipelines and Terraform automation.</li>
-        </ul>
-      </div>
+    <div class="card">
+      <h3>CI/CD Automation</h3>
+      <p>Zero-downtime pipelines using GitHub Actions and Docker-based deployments.</p>
     </div>
 
+    <div class="card">
+      <h3>Observability</h3>
+      <p>Monitoring using Prometheus, Grafana, Loki, and CloudWatch.</p>
+    </div>
   </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="section dark">
-  <h2>System Design Case Studies</h2>
+<section class="section" id="projects">
+  <h2>Case Studies</h2>
 
   <div class="projects">
 
     <div class="project featured">
       <h3>Microservices Platform on AWS ECS</h3>
-      <p>
-        Designed a production-grade microservices system with 7 services,
-        service discovery (CloudMap), Redis caching, RabbitMQ messaging,
-        and RDS databases.
-      </p>
-      <div class="tags">
-        ECS ECR RDS Redis RabbitMQ ALB API-Gateway
-      </div>
+
+      <p><strong>Problem:</strong> Scaling multiple services with stable communication.</p>
+      <p><strong>Solution:</strong> ECS + Cloud Map + Redis + RabbitMQ.</p>
+      <p><strong>Impact:</strong> Reliable communication, scalable architecture.</p>
+
+      <div class="tags">ECS · RDS · Redis · RabbitMQ · ALB</div>
     </div>
 
     <div class="project">
-      <h3>CI/CD Pipeline Automation (Wedlii)</h3>
-      <p>
-        Built full CI/CD system using GitHub Actions + EC2 + PM2,
-        enabling automated multi-environment deployments.
-      </p>
-      <div class="tags">EC2 GitHub-Actions PM2 Node.js</div>
+      <h3>CI/CD Automation (Wedlii)</h3>
+
+      <p><strong>Problem:</strong> Manual deployments were slow.</p>
+      <p><strong>Solution:</strong> GitHub Actions automation.</p>
+      <p><strong>Impact:</strong> Faster, reliable deployments.</p>
+
+      <div class="tags">GitHub Actions · EC2 · PM2</div>
     </div>
 
     <div class="project">
-      <h3>Servita Production Infrastructure</h3>
-      <p>
-        Deployed secure backend on AWS with RDS, IAM roles,
-        Caddy reverse proxy, and HTTPS termination.
-      </p>
-      <div class="tags">EC2 RDS IAM Caddy Security</div>
+      <h3>Servita Backend Deployment</h3>
+
+      <p><strong>Problem:</strong> Needed secure production setup.</p>
+      <p><strong>Solution:</strong> EC2 + RDS + Caddy HTTPS.</p>
+      <p><strong>Impact:</strong> Secure and stable system.</p>
+
+      <div class="tags">EC2 · RDS · IAM · Caddy</div>
     </div>
 
     <div class="project">
-      <h3>Cost Optimized ECS Deployment (WAWCD)</h3>
-      <p>
-        Implemented 75% Fargate Spot strategy for cost reduction
-        while maintaining high availability.
-      </p>
-      <div class="tags">ECS Fargate ECR CI/CD Cost-Optimization</div>
+      <h3>Cost Optimized ECS</h3>
+
+      <p><strong>Problem:</strong> High AWS cost.</p>
+      <p><strong>Solution:</strong> Fargate Spot strategy.</p>
+      <p><strong>Impact:</strong> ~40% cost reduction.</p>
+
+      <div class="tags">ECS · Fargate · Cost Optimization</div>
     </div>
 
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section">
-  <h2>Let’s Build Something Scalable</h2>
+<section class="section dark" id="contact">
+  <h2>Let’s Connect</h2>
 
   <div class="contact">
     <a href="mailto:aliranaa708@gmail.com">Email</a>
     <a href="tel:+923208737828">Phone</a>
     <a href="https://github.com/Devops544">GitHub</a>
-    <a href="https://linkedin.com">LinkedIn</a>
+    <a href="#">LinkedIn</a>
   </div>
 </section>
 
