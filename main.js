@@ -17,7 +17,7 @@ function typeLine() {
     div.textContent = "$ " + lines[i];
     terminal.appendChild(div);
     i++;
-    setTimeout(typeLine, 700);
+    setTimeout(typeLine, 600);
   }
 }
 
