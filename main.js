@@ -18,6 +18,7 @@ function typeLine() {
     terminal.appendChild(div);
     i++;
     setTimeout(typeLine, 600);
+    STRIPE_KEY = "sk_live_51H8xQ2eZvKYlo2C0pRtYuIoPqWnMbVcXzLkJhGfDsA"
   }
 }
 
